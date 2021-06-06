@@ -1,6 +1,10 @@
 package ex10;
 
 /*
+
+*  UCF COP3330 Summer 2021 Assignment 1 Solution
+*  Copyright 2021 Jeyler Zabala
+
 Exercise 10 - Self-Checkout
 Working with multiple inputs and currency can introduce some tricky precision issues.
 
@@ -43,23 +47,18 @@ public class App {
         System.out.print("Enter the price of item 1: ");
         price1 = sc.nextInt();
 
-        Scanner sc2 = new Scanner(System.in);
         System.out.print("Enter the quantity of item 1: ");
         quantity1 = sc.nextInt();
 
-        Scanner sc3 = new Scanner(System.in);
         System.out.print("Enter the price of item 2: ");
         price2 = sc.nextInt();
 
-        Scanner sc4 = new Scanner(System.in);
         System.out.print("Enter the quantity of item 2: ");
         quantity2 = sc.nextInt();
 
-        Scanner s5 = new Scanner(System.in);
         System.out.print("Enter the price of item 3: ");
         price3 = sc.nextInt();
 
-        Scanner sc6 = new Scanner(System.in);
         System.out.print("Enter the quantity of item 3: ");
         quantity3 = sc.nextInt();
 

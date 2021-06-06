@@ -30,5 +30,50 @@ Alter the program so that an indeterminate number of items can be entered.
 The tax and total are computed when there are no more items to be entered.
 */
 
+import java.util.Scanner;
+
 public class App {
+    public static void main(String[] args) {
+
+        int quantity1, quantity2, quantity3;
+        float price1, price2, price3, item1, item2, item3, subtotal, tax, total, taxRate;
+        taxRate = 0.055f;
+
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the price of item 1: ");
+        price1 = sc.nextInt();
+
+        Scanner sc2 = new Scanner(System.in);
+        System.out.print("Enter the quantity of item 1: ");
+        quantity1 = sc.nextInt();
+
+        Scanner sc3 = new Scanner(System.in);
+        System.out.print("Enter the price of item 2: ");
+        price2 = sc.nextInt();
+
+        Scanner sc4 = new Scanner(System.in);
+        System.out.print("Enter the quantity of item 2: ");
+        quantity2 = sc.nextInt();
+
+        Scanner s5 = new Scanner(System.in);
+        System.out.print("Enter the price of item 3: ");
+        price3 = sc.nextInt();
+
+        Scanner sc6 = new Scanner(System.in);
+        System.out.print("Enter the quantity of item 3: ");
+        quantity3 = sc.nextInt();
+
+        item1 = price1 * quantity1;
+        item2 = price2 * quantity2;
+        item3 = price3 * quantity3;
+
+        subtotal = item1 + item2 + item3;
+        tax = subtotal * taxRate;
+        total = subtotal + tax;
+
+        String strSubtotal = String.format("%.2f", subtotal);
+
+        String output = String.format("Subtotal: $%s\nTax: $%s\nTotal: $%s",strSubtotal, tax, total);
+        System.out.println(output);
+    }
 }
